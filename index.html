@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Letter to Nathan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg1: #f4f1ea;
+      --paper: #fcfaf6;
+      --accent: #000000;
+      --text: #3a3a3a;
+      --serif: "Georgia", "Times New Roman", serif;
+      --script: "Dancing Script", cursive;
+      --radius: 14px;
+      --card-width: min(760px, 92%);
+      --line-height: 1.7;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: var(--bg1);
+      padding: 40px 0;
+      font-family: var(--script);
+      font-size: 1.1rem;
+      line-height: var(--line-height);
+      text-align: center;
+    }
+
+    /* Envelope */
+    .envelope {
+      position: relative;
+      width: 380px;
+      height: 260px;
+      background: #e0c9a6;
+      margin: 100px auto;
+      cursor: pointer;
+      border-radius: 6px;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+      overflow: hidden;
+      transition: all 1s ease-in-out;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .envelope::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 50%;
+      background: #d1b28f;
+      transform-origin: top;
+      transition: transform 1s ease-in-out;
+      z-index: 2;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+
+    .envelope.open {
+      width: 90%;
+      max-width: 800px;
+      height: auto;
+      background: transparent;
+      box-shadow: none;
+      cursor: default;
+    }
+
+    .envelope.open::before {
+      transform: rotateX(180deg);
+      background: transparent;
+    }
+
+    /* Letter card */
+    .letter-card {
+      opacity: 0;
+      transform: translateY(50px);
+      width: var(--card-width);
+      margin: 0 auto;
+      background: var(--paper);
+      padding: 40px;
+      border-radius: var(--radius);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.07);
+      background-image: radial-gradient(rgba(0,0,0,0.02) 1px, transparent 1px);
+      background-size: 8px 8px;
+      border: 1px solid rgba(0,0,0,0.05);
+      transition: all 1.2s ease-in-out;
+      max-height: 0;
+      overflow: hidden;
+    }
+
+    .envelope.open .letter-card {
+      opacity: 1;
+      transform: translateY(0);
+      max-height: 9999px;
+      overflow: visible;
+    }
+
+    h1 {
+      margin: 0 0 25px 0;
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      color: var(--accent);
+      text-align: center;
+      letter-spacing: 0.02em;
+    }
+
+    .letter {
+      white-space: pre-wrap;
+      font-family: var(--script);
+      font-weight: 575;
+      text-align: left;
+    }
+
+    .signature {
+      margin-top: 28px;
+      font-family: var(--script);
+      font-size: 2.2rem;
+      font-weight: 600;
+      text-align: left;
+      color: var(--text);
+    }
+
+    /* YouTube player container */
+    .video-container {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .video-container iframe {
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Timer area */
+    .time-info {
+      margin-top: 30px;
+      font-family: var(--serif);
+      color: var(--accent);
+      font-size: 1.1rem;
+    }
+
+    @media (max-width:480px){
+      .letter-card { padding: 26px; }
+      h1 { font-size: 1.4rem; }
+      .letter { font-size: 1rem; }
+      .signature { font-size: 1.8rem; }
+      .video-container iframe {
+        width: 100%;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="envelope" id="envelope">
+  <div class="letter-card" id="letter">
+    <h1>My Letter to Nathan</h1>
+    <div class="signature">Dear Nathan,</div>
+    <div class="letter">
+I miss you with every fiber of my being, every single day—you were my entire world. I love you to the Moon and back, and I always will.
+
+You had this surprising giggle that let everyone know when you were actually laughing, and not just being polite. You would act like the most unaware person in the call whenever any tech help was needed while quietly knowing the solution because you didn't want to come off as a "know-it-all," and you were so spontaneously witty and funny out of absolutely nowhere. It never ceased to make me do a double-take at my computer screen, like you'd be looking back at me with your eyes squinted and a smirk on your face. But what made you extraordinary was how you understood exactly what people needed—not through some divine intuition, but because you had been through those same dark places yourself.
+
+You would spend hours in Discord with friends who were struggling, streaming Netflix or TierZoo, or playing games just to make them smile. You gave your attention, love, and acknowledgment freely and generously.
+
+The heartbreaking truth is that you understood what people needed because you were one of those people. You needed attention, love, and acknowledgment—probably more than anyone else. You became so good at healing because you knew exactly what to look for.
+
+You were always there when someone needed you. You always said you could tell when I was trying my best, and there were moments when it felt like we broke through something major together. I know you would be mad at me for saying this, but I will always have that feeling that I failed you. I only hope that you are experiencing the most complete and absolute peace imaginable.
+
+Thank you, Nathan, for everything—for showing me what it means to love someone not despite their pain, but because of how that pain taught them to love others. The world and I both lost someone irreplaceable when we lost you.
+
+Don't think I forgot about that hug you owe me~ You'll always be my baby boy.
+
+Until we meet again,
+    </div>
+    <div class="signature">Hayden ♥</div>
+
+    <div class="time-info" id="timeInfo"></div>
+
+    <!-- YouTube Video Player -->
+    <div class="video-container">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/0ZYeg9hQ5lQ"
+        title="Palace - Heaven Up There"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Envelope open animation
+  const envelope = document.getElementById('envelope');
+  envelope.addEventListener('click', () => envelope.classList.add('open'));
+
+  // Time tracker
+  const birthDate = new Date("2006-01-14T00:00:00");
+  const deathDate = new Date("2025-07-12T13:27:00");
+  const timeInfo = document.getElementById("timeInfo");
+
+  function updateTime() {
+    const now = new Date();
+    const diff = now - deathDate;
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const years = (diff / (1000 * 60 * 60 * 24 * 365.25)).toFixed(2);
+    const ageDiff = now - birthDate;
+    const age = Math.floor(ageDiff / (1000 * 60 * 60 * 24 * 365.25));
+    timeInfo.innerHTML = `
+      <strong>Born:</strong> January 14, 2006<br>
+      <strong>Passed:</strong> July 12, 2025 at 13:27<br><br>
+      He would be <b>${age}</b> years old.<br>
+      It has been <b>${days}</b> days (${years} years) since his passing.
+    `;
+  }
+
+  setInterval(updateTime, 1000);
+  updateTime();
+</script>
+
+</body>
+</html>
